@@ -363,9 +363,7 @@ ul li{
     background-color: white;
     border-radius: 10px;
     
-    /* background-image: url(./images/icon-error.svg);
-    background-repeat: no-repeat;
-    background-position: center right 10px; */}
+    }
  
  form{
      display: flex;

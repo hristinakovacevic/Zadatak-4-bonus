@@ -71,17 +71,16 @@ btn.addEventListener('click', (e)=>{
   
     let email = document.getElementsByClassName('email')[0]
     let container = document.getElementsByClassName('show-err')[0]
-    /* let error = document.getElementsByClassName('error')[0] */
     let mail_format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if(!email.value.match(mail_format)){
       
-       /*  error.classList.add('active') */
+       
         email.classList.add('active')  
         container.classList.add('active') 
         
     }  else { 
-                /* error.classList.remove('active')*/
+                
                 email.classList.add('active') 
                 
                 container.classList.remove('active') 
