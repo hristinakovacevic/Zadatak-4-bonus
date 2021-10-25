@@ -295,7 +295,7 @@ ul li{
     
 }
 .answer {
-    display: none;
+   
     color: var(--veryDarkBlue);
     cursor: pointer;
     max-height: 0;
@@ -304,6 +304,9 @@ ul li{
 }
 .question img{
     cursor: pointer;
+}
+.question p{
+    color:black
 }
 .question:hover p{
     color: var(--softRed);
@@ -325,7 +328,7 @@ ul li{
 .active .arrow{
     transform: rotate(180deg);
 }
-.answer .active {
+.active .answer  {
     display: block;
     max-height: 6em;
     transition: .8s;
@@ -378,6 +381,7 @@ ul li{
  
  input::placeholder{
      color: gray;
+     padding: 0%;
  }
 
  .active .error{
@@ -399,11 +403,11 @@ ul li{
     border: 2px solid var(--red) ;
 }
 input{
-     padding: 6%;
-    width: 65%;
+     
+    width: 96%;
     border: none;
     outline: none;
-    margin-left: 14%;
+    margin: 10%;
 }
 
  
@@ -451,7 +455,7 @@ input{
 /* ----------------------------------------------------MEDIA@------------------------------------------ */
  @media(max-width:500px) {
      body{
-         max-width:500px;
+        
          font-size: 14px;
          
      }
@@ -527,7 +531,11 @@ input{
         margin-top: 10%;
     }
     .faq-wrap{
-        margin-top: 26%;
+        margin-top: 4%;
+    margin-bottom: 10%;
+    }
+    .faq-content{
+        width: 80%;
     }
      
      /* ----------------------------EMAIL-BUTTONS-------------------------------- */
@@ -540,11 +548,10 @@ input{
          height: 6vh;
      }
      .email{
-         padding: 3%;
+        margin-top: 9%;
+        width: 81%;
      }
-     input{
-         width: 95%;
-     }
+     
      .email-btn{
         margin-top: 4%;
         margin-bottom: 2%;

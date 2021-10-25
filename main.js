@@ -48,13 +48,13 @@ for(let el of features ) {
 let content = document.querySelectorAll('li')
 for(let item of content){
     item.addEventListener('click', ()=>{
-        if(item.className === 'active') {
+        if(item.classList.contains('active')) {
             item.classList.toggle('active')
         }
         else {
             content.forEach(el => el.classList.remove('active'))
             item.classList.add("active")
-            item.lastChild.classList.add('active')
+            
         }
     
     })
