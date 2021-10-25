@@ -28,10 +28,10 @@ const img = document.getElementsByClassName('tab-1')[0];
 for(let el of features ) {
     
     el.addEventListener('click', ()=> {
-        
+      
     const activate = (num) => {
-        for( let elm of features ) {elm.classList.remove('active')}
-        el.classList.add('active')
+         for( let elem of features ) {elem.classList.remove('active')}
+        el.classList.add('active') 
         title.textContent = data[num].title;
         text.textContent = data[num].text;
         img.src = data[num].url;
@@ -54,6 +54,7 @@ for(let item of content){
         else {
             content.forEach(el => el.classList.remove('active'))
             item.classList.add("active")
+            item.lastChild.classList.add('active')
         }
     
     })

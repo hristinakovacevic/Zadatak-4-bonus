@@ -189,7 +189,7 @@ h4{
     color: var(--softRed);
 }
 .tab.active{
-    border-bottom: 3px solid var(--red);
+    border-bottom: 3px solid var(--softRed);
 }
 
 
@@ -298,6 +298,9 @@ ul li{
     display: none;
     color: var(--veryDarkBlue);
     cursor: pointer;
+    max-height: 0;
+    transition: .8s;
+    overflow: hidden;
 }
 .question img{
     cursor: pointer;
@@ -322,8 +325,10 @@ ul li{
 .active .arrow{
     transform: rotate(180deg);
 }
-.active .answer{
+.answer .active {
     display: block;
+    max-height: 6em;
+    transition: .8s;
 }
 .active .question{
     color: var(--softRed);
@@ -368,8 +373,7 @@ ul li{
  form{
      display: flex;
      column-gap: 2%;
-     width: 35%;
-     justify-content: space-evenly;
+     
  }
  
  input::placeholder{
@@ -394,12 +398,14 @@ ul li{
     background-position: center right 25px;
     border: 2px solid var(--red) ;
 }
-
-.email{
-    padding: 6%;
-    border-radius: 7px;
+input{
+     padding: 6%;
+    width: 65%;
     border: none;
+    outline: none;
+    margin-left: 14%;
 }
+
  
  .email-btn{
     background-color: var(--softRed);
